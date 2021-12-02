@@ -72,7 +72,7 @@ const CardDetail = ({ post }: Props) => {
   };
 
   return (
-    <div className="bg-white shadow-lg rounded-lg lg:p-8 pb-12 mb-8 border-yellow-500 border-2">
+    <div className="bg-white shadow-lg rounded-lg lg:p-8 pb-12 mb-8 border-yellow-500 border-b-2">
       <div className="relative overflow-hidden shadow-md pb-80 mb-6">
         <Image
           src={post.featuredImage.url}

@@ -27,13 +27,12 @@ const Header = () => {
               href={`/category/${category.slug}`}
               passHref
             >
-              <span className="md:float-right mt-2 align-middle text-white ml-4 font-semibold cursor-pointer">
+              <span className="md:float-right mt-2 align-middle text-white mr-4 font-semibold cursor-pointer">
                 {category.name}
               </span>
             </Link>
           ))}
         </div>
-        <div></div>
       </div>
     </div>
   );
