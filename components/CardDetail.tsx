@@ -1,4 +1,5 @@
 import { Post } from "../types/postDetail";
+import Image from "next/image";
 import React from "react";
 import TodayIcon from "@mui/icons-material/Today";
 import moment from "moment";
@@ -57,7 +58,7 @@ const CardDetail = ({ post }: Props) => {
         );
       case "image":
         return (
-          <img
+          <Image
             key={index}
             alt={obj.title}
             height={obj.height}
@@ -72,20 +73,23 @@ const CardDetail = ({ post }: Props) => {
 
   return (
     <div className="bg-white shadow-lg rounded-lg lg:p-8 pb-12 mb-8 border-yellow-500 border-2">
-      <div className="relative overflow-hidden shadow-md mb-6">
-        <img
+      <div className="relative overflow-hidden shadow-md p-60 mb-6">
+        <Image
           src={post.featuredImage.url}
           alt={post.title}
           className="object-top h-full w-full rounded-t-lg"
+          layout="fill"
         />
       </div>
       <div className="px-4 lg:px-0">
         <div className="flex items-center mb-8 w-full">
           <div className="flex items-center mb-4 lg:mb-0 w-full lg:w-auto mr-8">
-            <img
+            <Image
               src={post.author.photo.url}
               alt={post.author.name}
-              className="w-12 h-12 rounded-full"
+              className="rounded-full"
+              width="80px"
+              height="80px"
             />
             <p className="inline align-middle text-gray-700 ml-2 text-lg">
               {post.author.name}

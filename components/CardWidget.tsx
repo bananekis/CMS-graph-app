@@ -1,5 +1,6 @@
 import { Post } from "../types/relatedPost";
 import { getRecentPosts, getSimilarPosts } from "../services";
+import Image from "next/image";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import moment from "moment";
@@ -26,10 +27,10 @@ const CardWidget = ({ categories, slug }: Props) => {
       {relatedPosts.map((post) => (
         <div key={post.title} className="flex items-center w-full mb-4">
           <div className="w-16 flex-none">
-            <img
+            <Image
               src={post.featuredImage.url}
               alt={post.title}
-              height="60px"
+              height="40px"
               width="60px"
               className="align-middle rounded-full"
             />
