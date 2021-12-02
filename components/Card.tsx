@@ -12,11 +12,11 @@ interface Props {
 const Card = ({ post }: Props) => {
   return (
     <div className="bg-white shadow-lg rounded-lg lg:p-8 pb-12 mb-8 border-yellow-500 border-2">
-      <div className="relative overflow-hidden shadow-md p-60 mb-6">
+      <div className="relative overflow-hidden shadow-md pb-80 mb-6">
         <Image
           src={post.featuredImage.url}
           alt={post.title}
-          className="absolute h-80 w-full object-cover shadow-lg rounded-lg lg:rounded-lg"
+          className="relative object-cover shadow-lg rounded-lg lg:rounded-lg"
           layout="fill"
         />
       </div>

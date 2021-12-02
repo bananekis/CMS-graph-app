@@ -32,7 +32,7 @@ const CardWidget = ({ categories, slug }: Props) => {
               alt={post.title}
               height="40px"
               width="60px"
-              className="align-middle rounded-full"
+              className="align-middle rounded-full object-cover"
             />
           </div>
           <div className="flex-grow ml-4">

@@ -15,3 +15,5 @@ The required info `comments form` such as name or email are stored into localhos
 ## GraphCMS
 
 Platform I use for creating models, references between each asset and creating `GraphQL` queries.
+
+## run `npm run dev` to launch the app on localhost

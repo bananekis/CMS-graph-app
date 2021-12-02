@@ -73,11 +73,11 @@ const CardDetail = ({ post }: Props) => {
 
   return (
     <div className="bg-white shadow-lg rounded-lg lg:p-8 pb-12 mb-8 border-yellow-500 border-2">
-      <div className="relative overflow-hidden shadow-md p-60 mb-6">
+      <div className="relative overflow-hidden shadow-md pb-80 mb-6">
         <Image
           src={post.featuredImage.url}
           alt={post.title}
-          className="object-top h-full w-full rounded-t-lg"
+          className="relative object-cover rounded-lg shadow-lg"
           layout="fill"
         />
       </div>
@@ -88,8 +88,8 @@ const CardDetail = ({ post }: Props) => {
               src={post.author.photo.url}
               alt={post.author.name}
               className="rounded-full"
-              width="80px"
-              height="80px"
+              width="60px"
+              height="60px"
             />
             <p className="inline align-middle text-gray-700 ml-2 text-lg">
               {post.author.name}

@@ -14,8 +14,8 @@ const Author = ({ author }: Props) => {
           src={author.photo.url}
           unoptimized
           alt={author.name}
-          height="80px"
-          width="80px"
+          height="90px"
+          width="90px"
           className="rounded-full"
         />
       </div>
